@@ -26,14 +26,24 @@
 
             </div>
 
-            <button class="btn" id="prev" disabled>Prev</button>
-            <button class="btn" id="next">Next</button>
+            <div class="container"> <button type='button' class="btn" id="prev"
+            disabled>Prev</button>
+                <button type='button' class="btn" id="next">Next</button>
+            </div>
+
+
+
 
         </div>
+        <div class="color-picker-container"><label for="color-picker">Pick your color!</label><input
+        type="color" name="color-picker" id="color-picker" value="#000000"><button type="buttton"
+        class="btn" id="okay">Okay</button></div>
+
     </main>
 
 
-    <script src="index.js"></script>
+    <script type='module' src="index.js"></script>
+    <script type='module' src='tinycolor.js'></script>
 </body>
 
 </html>

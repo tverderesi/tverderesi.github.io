@@ -2,6 +2,8 @@ const progress = document.getElementById("progress");
 const prev = document.getElementById("prev");
 const next = document.getElementById("next");
 const circles = document.querySelectorAll(".circle");
+const color_picker = document.getElementById("color-picker");
+const color_picker_okay = document.getElementById("okay");
 
 let currentActive = 1;
 
@@ -36,3 +38,23 @@ function update() {
     next.disabled = false;
   }
 }
+
+okay.addEventListener("click", () => {
+  let color_string = String(color_picker.value);
+  let btn_color = tinycolor(color_string);
+  if (btn_color.isLight()) {
+    document.documentElement.style.setProperty("--bg-color", "rgb(83, 83, 83)");
+    document.documentElement.style.setProperty("--text-color", "white");
+    document.documentElement.style.setProperty("--btn-text-color", "black");
+  }
+  if (btn_color.isDark()) {
+    document.documentElement.style.setProperty("--bg-color", " white");
+    document.documentElement.style.setProperty("--text-color", "black");
+    document.documentElement.style.setProperty("--btn-text-color", "white");
+  }
+
+  document.documentElement.style.setProperty(
+    "--line-border-fill",
+    `${color_picker.value}`
+  );
+});
