@@ -1,0 +1,11 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+
+.bar {
+    transform: rotate(180deg);
+    transform-origin: 15px 25vh;
+    transition: transform 1s ease-in-out;
+}
+
+div {
+    color: red !important;
+}
