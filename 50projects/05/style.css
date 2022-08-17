@@ -44,18 +44,22 @@ body {
 .loading-text {
     font-size: 50px;
     color: #fff;
-
-
 }
 
-div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    width: 10vw;
-    height: 10vw;
-    border-radius: 50%;
-    border-image: 10px solid white;
+
+.progress-bar {
+    width: 15vw;
+    height: .5vw;
+    border: 2px solid white;
+    border-radius: .25vw;
+    margin-top: 5vh;
+}
+
+.loading-anim {
+    width: 15vw;
+    height: .5vw;
+    background-color: white;
+    z-index: -1;
+    position: absolute;
+    top: inherit;
 }
