@@ -1,0 +1,34 @@
+{
+  "projects": [
+    {
+      "ID": "01",
+      "title": "Expanding Cards",
+      "description": "This project consists of ",
+      "type": "Component"
+    },
+    {
+      "ID": "02",
+      "title": "Expanding Cards",
+      "description": "This project consists of 2",
+      "type": "Component"
+    },
+    {
+      "ID": "03",
+      "title": "Expanding Cards",
+      "description": "This project consists of 3",
+      "type": "Component"
+    },
+    {
+      "ID": "04",
+      "title": "Expanding Cards",
+      "description": "This project consists of 4",
+      "type": "Component"
+    },
+    {
+      "ID": "05",
+      "title": "Expanding Cards",
+      "description": "This project consists of 5 ",
+      "type": "Component"
+    }
+  ]
+}

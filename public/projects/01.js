@@ -1,0 +1,21 @@
+const panels = document.querySelectorAll(".panel");
+
+panels.forEach(panel => {
+  panel.addEventListener("click", () => {
+    if (panel.classList.contains("active")) {
+      panel.classList.remove("active");
+    } else {
+      RemoveActiveClasses();
+      panel.classList.add("active");
+    }
+  });
+});
+// for (prop of panel.classList) { if (prop == "active") { panel.classList.remove("active");
+//   console.log("cheguei no if"); } else { RemoveActiveClasses(); panel.classList.add("active");
+//     console.log(panel.classList); console.log("cheguei no else");
+
+function RemoveActiveClasses() {
+  panels.forEach(panel => {
+    panel.classList.remove("active");
+  });
+}
