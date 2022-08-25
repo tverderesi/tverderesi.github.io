@@ -1,64 +1,168 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-@media only screen and (max-height: 200px) {
-    body {
-        background-color: transparent;
-    }
+* {
+    box-sizing: border-box;
 
-    h1 {
-        background-color: #282d33;
-        border-radius: 2px;
-        font-size: 4px;
-        border: none;
-        color: #282d33;
-        width: 60%;
-        margin-left: 20%;
-    }
+}
 
+:root {
+    --line-border-fill: #282d33;
+    --line-border-empty: #e0e0e0;
+    --btn-bg-color: #e0e0e0;
+    --text-color: black;
+    --bg-color: white;
+    --btn-text-color: white;
+}
 
-
-    .color-picker-container * {
-        display: none;
-    }
-
-    .circle,
-    .circle.active {
-        height: 30px;
-        width: 30px;
-        font-size: 0px;
-    }
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    height: 100vh;
+    margin: 0;
+    background-color: transparent;
+    color: var(--text-color);
+    overflow: hidden;
 
 
+}
 
-    .btn {
-        height: 3%;
-        font-size: 0px;
-    }
-
-    :root {
-        --line-border-fill: #282d33;
-        --line-border-empty: #e0e0e0;
-        --btn-bg-color: #e0e0e0;
-        --text-color: black;
-        --bg-color: white;
-        --btn-text-color: white;
-
-    }
-
-    main {
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .container {
-        margin-top: 10%;
-        align-items: center;
-    }
-
-    .progress-container {
-        width: 60vw;
-    }
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
 
 
+}
+
+h1 {
+    font-weight: 200;
+    background-color: #282d33;
+    border-radius: 3px;
+    font-size: 6px;
+    border: none;
+    color: #282d33;
+    width: 30%;
+    margin-left: 35%;
+
+}
+
+.container {
+
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.progress-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin-bottom: max(30px, 10vh);
+    width: 60vw;
+    text-align: center;
+
+
+}
+
+.container-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.progress-container::before {
+    content: '';
+    background-color: var(--line-border-empty);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: -1;
+    height: 4px;
+    width: 100%;
+}
+
+
+.progress {
+    background-color: var(--line-border-fill);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: -1;
+    height: 4px;
+    width: 0%;
+    transition: 0.4s ease;
+}
+
+.circle,
+.circle.active {
+    height: 30px;
+    width: 30px;
+    font-size: 0px;
+}
+
+.circle {
+    background-color: var(--btn-bg-color);
+    color: rgb(90, 90, 90);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid var(--line-border-empty);
+    transition: .4s ease;
+
+}
+
+.circle.active {
+    background-color: var(--line-border-fill);
+    color: var(--btn-bg-color);
+    font-weight: 600;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .4s ease;
+    border: 4px solid var(--line-border-fill);
+    color: var(--btn-text-color);
+}
+
+.btn {
+    background-color: var(--line-border-fill);
+    color: var(--btn-text-color);
+    border-radius: 6px;
+    padding: 8px 30px;
+    cursor: pointer;
+    font-family: inherit;
+    margin: 5px;
+    border: none;
+    height: 3%;
+    font-size: 0px;
+}
+
+.btn:active {
+    transform: scale(.95);
+}
+
+.btn:focus {
+    outline: 0;
+}
+
+.btn:disabled {
+    background-color: var(--line-border-empty);
+    cursor: not-allowed;
+    transform: scale(1);
+    color: rgb(90, 90, 90);
+}
+
+.button-container {
+    justify-self: flex-start;
+    height: auto;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
 }

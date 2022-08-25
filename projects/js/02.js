@@ -19,15 +19,11 @@ prev.addEventListener("click", () => {
 
 function update() {
   circles.forEach((circle, idx) => {
-    idx < currentActive
-      ? circle.classList.add("active")
-      : circle.classList.remove("active");
+    idx < currentActive ? circle.classList.add("active") : circle.classList.remove("active");
   });
 
   const actives = document.querySelectorAll(".active");
-  progress.style.width = `${
-    ((actives.length - 1) / (circles.length - 1)) * 100
-  }%`;
+  progress.style.width = `${((actives.length - 1) / (circles.length - 1)) * 100}%`;
 
   if (currentActive === 1) {
     prev.disabled = true;
@@ -39,22 +35,21 @@ function update() {
   }
 }
 
-okay.addEventListener("click", () => {
-  let color_string = String(color_picker.value);
-  let btn_color = tinycolor(color_string);
-  if (btn_color.isLight()) {
-    document.documentElement.style.setProperty("--bg-color", "rgb(83, 83, 83)");
-    document.documentElement.style.setProperty("--text-color", "white");
-    document.documentElement.style.setProperty("--btn-text-color", "black");
-  }
-  if (btn_color.isDark()) {
-    document.documentElement.style.setProperty("--bg-color", " white");
-    document.documentElement.style.setProperty("--text-color", "black");
-    document.documentElement.style.setProperty("--btn-text-color", "white");
-  }
+if (color_picker_okay != null) {
+  color_picker_okay.addEventListener("click", () => {
+    let color_string = String(color_picker.value);
+    let btn_color = tinycolor(color_string);
+    if (btn_color.isLight()) {
+      document.documentElement.style.setProperty("--bg-color", "rgb(83, 83, 83)");
+      document.documentElement.style.setProperty("--text-color", "white");
+      document.documentElement.style.setProperty("--btn-text-color", "black");
+    }
+    if (btn_color.isDark()) {
+      document.documentElement.style.setProperty("--bg-color", " white");
+      document.documentElement.style.setProperty("--text-color", "black");
+      document.documentElement.style.setProperty("--btn-text-color", "white");
+    }
 
-  document.documentElement.style.setProperty(
-    "--line-border-fill",
-    `${color_picker.value}`
-  );
-});
+    document.documentElement.style.setProperty("--line-border-fill", `${color_picker.value}`);
+  });
+}

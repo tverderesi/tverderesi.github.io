@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu');
+
+
+
+* {
+    font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-weight: lighter;
+    font-size: 3rem;
+    color: #fff;
+    text-align: center;
+}
+
+header {
+    width: 100vw;
+    position: absolute;
+    top: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin: 0;
+
+}
+
+.bg {
+    background: url('https://images.pexels.com/photos/2506923/pexels-photo-2506923.jpeg') no-repeat center center/cover;
+    top: -15vh;
+    left: -15vw;
+    width: 130vw;
+    height: 130vh;
+    z-index: -1;
+    position: absolute;
+    filter: blur(30px);
+}
+
+.loading-text {
+    font-size: 50px;
+    color: #fff;
+}
+
+
+.progress-bar {
+    width: 15vw;
+    height: .5vw;
+    border: 2px solid white;
+    border-radius: .25vw;
+    margin-top: 5vh;
+}
+
+.loading-anim {
+    width: 15vw;
+    height: .5vw;
+    background-color: white;
+    z-index: -1;
+    position: absolute;
+    top: inherit;
+}

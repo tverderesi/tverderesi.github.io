@@ -20,9 +20,13 @@ $.getJSON("../data/projects.json", result => {
 
         </div>
         <div class='col-4 align-self-center'>
-        <iframe class="responsive-iframe" width='90%' height='200px'
+        <div class='d-flex flex-column'>
+        
+        <iframe class="responsive-iframe" width='100%' height='200px'
         src="./html/minified/${project.ID}.html">
         </iframe>
+        <p class='text-center mt-3 fs-6'><i class="fa-solid fa-arrow-up"></i> click on me!</p>
+
         </div>
 
 
