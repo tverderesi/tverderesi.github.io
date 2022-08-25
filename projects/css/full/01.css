@@ -105,32 +105,3 @@ h1 {
     }
 
 }
-
-@media only screen and (max-height: 200px) {
-    body {
-        background-color: transparent;
-    }
-
-    h1 {
-        background-color: #282d33;
-        border-radius: 2px;
-        font-size: 4px;
-        border: none;
-        color: #282d33
-    }
-
-
-    .panel * {
-        display: none;
-    }
-
-    .panel {
-
-        background-image: none !important;
-        background-color: #e0e0e0;
-    }
-
-    .panel.active {
-        background-color: #282d33;
-    }
-}

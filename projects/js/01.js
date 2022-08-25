@@ -10,9 +10,6 @@ panels.forEach(panel => {
     }
   });
 });
-// for (prop of panel.classList) { if (prop == "active") { panel.classList.remove("active");
-//   console.log("cheguei no if"); } else { RemoveActiveClasses(); panel.classList.add("active");
-//     console.log(panel.classList); console.log("cheguei no else");
 
 function RemoveActiveClasses() {
   panels.forEach(panel => {
