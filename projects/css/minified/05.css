@@ -8,9 +8,18 @@
 
 h1 {
     font-weight: lighter;
-    font-size: 3rem;
-    color: #fff;
+    font-size: 12px;
+    height: 12px;
+    background-color: #282d33;
     text-align: center;
+    color: transparent;
+    width: 40%;
+    margin-left: 30%;
+    border-radius: 4px;
+}
+
+i {
+    font-size: 40px;
 }
 
 header {
@@ -31,34 +40,28 @@ body {
 }
 
 .bg {
-    background: url('https://images.pexels.com/photos/2506923/pexels-photo-2506923.jpeg') no-repeat center center/cover;
-    top: -15vh;
-    left: -15vw;
-    width: 130vw;
-    height: 130vh;
-    z-index: -1;
-    position: absolute;
+
     filter: blur(30px);
 }
 
 .loading-text {
-    font-size: 50px;
-    color: #fff;
+    font-size: 20px;
+    color: #282d33;
 }
 
 
 .progress-bar {
-    width: 15vw;
-    height: .5vw;
-    border: 2px solid white;
-    border-radius: .25vw;
+    width: 50vw;
+    height: 4px;
+    border: 2px solid #282d33;
+    border-radius: 3px;
     margin-top: 5vh;
 }
 
 .loading-anim {
-    width: 15vw;
-    height: .5vw;
-    background-color: white;
+    width: 50vw;
+    height: 5px;
+    background-color: #282d33;
     z-index: -1;
     position: absolute;
     top: inherit;
