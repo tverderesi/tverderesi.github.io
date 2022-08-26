@@ -4,7 +4,6 @@ const container = $(".container");
 
 open.click(function () {
   container.addClass("show-nav");
-  console.log("oi");
 });
 
 close.click(function () {

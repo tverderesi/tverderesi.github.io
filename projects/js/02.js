@@ -3,7 +3,7 @@ const prev = document.getElementById("prev");
 const next = document.getElementById("next");
 const circles = document.querySelectorAll(".circle");
 const color_picker = document.getElementById("color-picker");
-const color_picker_okay = document.getElementById("okay");
+const okay = document.getElementById("okay");
 
 let currentActive = 1;
 
@@ -35,8 +35,8 @@ function update() {
   }
 }
 
-if (color_picker_okay != null) {
-  color_picker_okay.addEventListener("click", () => {
+if (okay != null) {
+  okay.addEventListener("click", () => {
     let color_string = String(color_picker.value);
     let btn_color = tinycolor(color_string);
     if (btn_color.isLight()) {
