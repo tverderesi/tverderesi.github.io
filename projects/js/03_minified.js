@@ -1,10 +1,9 @@
 const container = $(".container");
-const bota = $("#bota");
+const fakebtn = $("#fake-btn");
 const content = $("#fake-text");
 let i = 0;
 
-bota.click(function () {
-  console.log("hiiii");
+fakebtn.click(function () {
   container.toggleClass("show-nav");
 });
 

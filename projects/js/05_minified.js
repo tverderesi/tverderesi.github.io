@@ -19,7 +19,6 @@ $("body").on("click", function (param) {
       load_anim.css("width", 0.01 * width * load);
       load_anim.css("opacity", 1 - load / 100);
       progress_bar.css("opacity", 1 - load / 100);
-      console.log(interval);
       if (load > 99) {
         clearInterval(interval);
         resolve();

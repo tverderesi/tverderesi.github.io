@@ -194,7 +194,7 @@ div .fake-text {
     flex-direction: row;
 }
 
-#bota {
+#fake-btn {
     position: fixed;
     z-index: 9999999999999999999;
     width: 40px;
