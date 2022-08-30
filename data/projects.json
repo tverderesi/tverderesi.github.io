@@ -3,7 +3,8 @@
     {
       "ID": "01",
       "title": "Expanding Cards",
-      "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad ratione inventoreeum sed voluptates sequi ipsum dignissimos aperiam quas beatae architecto, molestias omnis quos voluptatem in consectetur possimus minus temporibus.",
+      "description": "This component contains some cards which show a content preview. Once clicked, the panel expands to its full size and a caption for the panel, whereas the other panels contract in other to better accomodate the full-sized one. It is best used with pictures. To enhance the original project, I coded a close panel animation with returns the expanded panel to its original size.",
+      "languages": "HTML, CSS, JavaScript",
       "type": "Component"
     },
     {
