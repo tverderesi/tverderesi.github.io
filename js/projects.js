@@ -13,6 +13,7 @@ $.getJSON("../data/projects.json", result => {
             <h2>
             ${project.title}
             </h2>
+            <h4 class='small fst-italic'>Coded using: ${project.languages} </h4>
 
             <p class="mt-4 text-justify">
             ${project.description}
