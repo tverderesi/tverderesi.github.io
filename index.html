@@ -1,9 +1,49 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta http-equiv="refresh" content="0;url=https://tverderesi.dev">
+  <meta http-equiv="refresh" content="3;url=https://www.your-portfolio-website.com">
+  <title>Redirecting...</title>
+  <style>
+    body {
+      background-color: #f4f4f4;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    
+    h1 {
+      color: #333;
+      margin-top: 150px;
+    }
+    
+    p {
+      color: #666;
+      font-size: 18px;
+      margin-top: 20px;
+    }
+    
+    .spinner {
+      margin: 30px auto;
+      width: 40px;
+      height: 40px;
+      position: relative;
+      border-radius: 50%;
+      border-top: 3px solid #333;
+      animation: rotate 1s linear infinite;
+    }
+    
+    @keyframes rotate {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
 </head>
 <body>
-  <p>Please wait while you're redirected to my portfolio website...</p>
+  <h1>Redirecting...</h1>
+  <div class="spinner"></div>
+  <p>If you are not redirected, <a href="https://www.your-portfolio-website.com">click here</a>.</p>
 </body>
 </html>
